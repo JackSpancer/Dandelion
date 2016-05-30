@@ -1,5 +1,7 @@
 package com.dandelion.service.impl;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
@@ -19,6 +21,21 @@ public class CourtServiceImpl implements CourtServce {
 	@Override
 	public boolean addCourt(CourtEntity courtEntity) {
 		return courtDao.addCourt(courtEntity);
+	}
+
+	@Override
+	public boolean deleteCourt(CourtEntity courtEntity) {
+		return courtDao.deleteCourt(courtEntity);
+	}
+
+	@Override
+	public List<CourtEntity> getAllCourt() {
+		return courtDao.getAllCourt();
+	}
+
+	@Override
+	public List<CourtEntity> findCourt(CourtEntity courtEntity) {
+		return courtDao.findCourt(courtEntity);
 	}
 
 }

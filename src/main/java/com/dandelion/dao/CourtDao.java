@@ -9,12 +9,7 @@ public interface CourtDao {
 	
 	public boolean deleteCourt(CourtEntity courtEntity);
 	
-	/**
-	 * 获取所有的场地信息
-	 * @param courtEntity
-	 * @return
-	 */
-	public List<CourtEntity> getAllCourt(CourtEntity courtEntity);
+	public List<CourtEntity> getAllCourt();
 	
 	public List<CourtEntity> findCourt(CourtEntity courtEntity);
 	

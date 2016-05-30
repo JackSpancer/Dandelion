@@ -52,7 +52,7 @@ public class CourtDaoImpl implements CourtDao {
 	}
 
 	@Override
-	public List<CourtEntity> getAllCourt(CourtEntity courtEntity) {
+	public List<CourtEntity> getAllCourt() {
 		Session session = this.getCurrSession();
 		String hql = "from CourtEntity";
 		Query query = session.createQuery(hql);
