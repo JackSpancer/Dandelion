@@ -81,7 +81,6 @@ public class CourtDaoImpl implements CourtDao {
 			log.info("未查找到相关的场地");
 			return null;
 		}
-		return null;
 	}
 
 }
