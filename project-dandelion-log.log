@@ -1,0 +1,372 @@
+[INFO][2016-05-28 22:52:45,322][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-05-28 22:52:46,002][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-05-28 22:52:46,246][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@49f66dc1: startup date [Sat May 28 22:52:46 CST 2016]; root of context hierarchy
+[INFO][2016-05-28 22:52:46,702][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-05-28 22:52:46,862][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@71d5930f: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,courtDao,teamDao,userDao,courtService,teamService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-05-28 22:52:47,296][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-05-28 22:52:47,604][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-05-28 22:52:48,524][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-05-28 22:52:48,544][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-05-28 22:52:48,567][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-05-28 22:52:48,570][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-05-28 22:52:49,309][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-05-28 22:52:49,591][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-05-28 22:52:49,598][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-05-28 22:52:49,967][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-05-28 22:52:49,970][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-05-28 22:52:49,977][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-05-28 22:52:50,029][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_courtinfo
+[INFO][2016-05-28 22:52:50,029][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, username, xbaidu, location, ybaidu, tel, courtname, detaillocation]
+[INFO][2016-05-28 22:52:50,029][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-28 22:52:50,030][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-28 22:52:50,046][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_teaminfo
+[INFO][2016-05-28 22:52:50,047][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, declaration, teamname, regdate, leader, introduction, mobile]
+[INFO][2016-05-28 22:52:50,047][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-28 22:52:50,047][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-28 22:52:50,066][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_user
+[INFO][2016-05-28 22:52:50,066][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, birthday, sex, username, regtime, startplay, remark, state, password, mobile]
+[INFO][2016-05-28 22:52:50,066][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-28 22:52:50,066][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[ERROR][2016-05-28 22:52:50,162][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table t_teaminfo add column introduction  varchar(255)
+[ERROR][2016-05-28 22:52:50,163][org.hibernate.tool.hbm2ddl.SchemaUpdate]Duplicate column name 'introduction'
+[INFO][2016-05-28 22:52:50,163][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-05-28 22:52:50,315][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-05-28 22:52:47",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:244268099, ConnectTime:"2016-05-28 22:52:49", UseCount:2, LastActiveTime:"2016-05-28 22:52:50"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[ERROR][2016-05-28 22:52:50,657][com.dandelion.dao.impl.TeamDaoImpl]删除失败
+[INFO][2016-05-28 22:52:50,671][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@49f66dc1: startup date [Sat May 28 22:52:46 CST 2016]; root of context hierarchy
+[INFO][2016-05-28 22:52:50,672][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@71d5930f: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,courtDao,teamDao,userDao,courtService,teamService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-05-28 22:52:50,687][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-05-29 22:57:04,436][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-05-29 22:57:05,257][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-05-29 22:57:05,447][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@56d15836: startup date [Sun May 29 22:57:05 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 22:57:05,690][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-05-29 22:57:05,791][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@27afbb9: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,courtDao,teamDao,TeamMemberDao,userDao,courtService,TeamMemberService,teamService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-05-29 22:57:06,049][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-05-29 22:57:06,253][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-05-29 22:57:07,022][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-05-29 22:57:07,029][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-05-29 22:57:07,031][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-05-29 22:57:07,032][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-05-29 22:57:07,483][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-05-29 22:57:07,721][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-05-29 22:57:07,721][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-05-29 22:57:08,050][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-05-29 22:57:08,050][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-05-29 22:57:08,056][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-05-29 22:57:08,111][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_courtinfo
+[INFO][2016-05-29 22:57:08,111][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, username, xbaidu, location, ybaidu, tel, courtname, detaillocation]
+[INFO][2016-05-29 22:57:08,112][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 22:57:08,112][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 22:57:08,145][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_teaminfo
+[INFO][2016-05-29 22:57:08,145][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, declaration, teamname, regdate, leader, introduction, mobile]
+[INFO][2016-05-29 22:57:08,145][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 22:57:08,146][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 22:57:08,149][java.sql.DatabaseMetaData]HHH000262: Table not found: t_teammember
+[INFO][2016-05-29 22:57:08,173][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_user
+[INFO][2016-05-29 22:57:08,173][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, birthday, sex, username, regtime, startplay, remark, state, password, mobile]
+[INFO][2016-05-29 22:57:08,173][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 22:57:08,173][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 22:57:08,175][java.sql.DatabaseMetaData]HHH000262: Table not found: t_teammember
+[INFO][2016-05-29 22:57:08,176][java.sql.DatabaseMetaData]HHH000262: Table not found: t_teammember
+[ERROR][2016-05-29 22:57:08,265][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table t_teaminfo add column introduction  varchar(255)
+[ERROR][2016-05-29 22:57:08,265][org.hibernate.tool.hbm2ddl.SchemaUpdate]Duplicate column name 'introduction'
+[INFO][2016-05-29 22:57:08,439][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-05-29 22:57:08,627][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-05-29 22:57:05",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1800930759, ConnectTime:"2016-05-29 22:57:07", UseCount:2, LastActiveTime:"2016-05-29 22:57:08"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[WARN][2016-05-29 22:57:08,974][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 58.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2016-05-29 22:57:08,976][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 73.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2016-05-29 22:57:09,180][com.dandelion.dao.impl.TeamDaoImpl]添加队员成功
+[INFO][2016-05-29 22:57:09,249][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@56d15836: startup date [Sun May 29 22:57:05 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 22:57:09,251][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@27afbb9: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,courtDao,teamDao,TeamMemberDao,userDao,courtService,TeamMemberService,teamService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-05-29 22:57:09,267][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-05-29 22:57:29,115][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-05-29 22:57:29,618][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-05-29 22:57:29,761][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@56d15836: startup date [Sun May 29 22:57:29 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 22:57:30,006][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-05-29 22:57:30,105][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@205f4f: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,courtDao,teamDao,TeamMemberDao,userDao,courtService,TeamMemberService,teamService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-05-29 22:57:30,392][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-05-29 22:57:30,575][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-05-29 22:57:31,288][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-05-29 22:57:31,303][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-05-29 22:57:31,308][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-05-29 22:57:31,310][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-05-29 22:57:31,756][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-05-29 22:57:31,971][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-05-29 22:57:31,971][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-05-29 22:57:32,280][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-05-29 22:57:32,280][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-05-29 22:57:32,284][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-05-29 22:57:32,312][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_courtinfo
+[INFO][2016-05-29 22:57:32,313][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, username, xbaidu, location, ybaidu, tel, courtname, detaillocation]
+[INFO][2016-05-29 22:57:32,313][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 22:57:32,313][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 22:57:32,324][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_teaminfo
+[INFO][2016-05-29 22:57:32,324][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, declaration, teamname, regdate, leader, introduction, mobile]
+[INFO][2016-05-29 22:57:32,324][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 22:57:32,324][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 22:57:32,335][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_teammember
+[INFO][2016-05-29 22:57:32,335][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, teamid, userid]
+[INFO][2016-05-29 22:57:32,335][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 22:57:32,335][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 22:57:32,351][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_user
+[INFO][2016-05-29 22:57:32,351][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, birthday, sex, username, regtime, startplay, remark, state, password, mobile]
+[INFO][2016-05-29 22:57:32,351][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 22:57:32,351][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[ERROR][2016-05-29 22:57:32,420][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table t_teaminfo add column introduction  varchar(255)
+[ERROR][2016-05-29 22:57:32,420][org.hibernate.tool.hbm2ddl.SchemaUpdate]Duplicate column name 'introduction'
+[INFO][2016-05-29 22:57:32,421][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-05-29 22:57:32,548][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-05-29 22:57:30",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:716525859, ConnectTime:"2016-05-29 22:57:31", UseCount:2, LastActiveTime:"2016-05-29 22:57:32"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[WARN][2016-05-29 22:57:32,769][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 58.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2016-05-29 22:57:32,771][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 73.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2016-05-29 22:57:32,920][com.dandelion.dao.impl.TeamDaoImpl]队员以在球队中，加入失败
+[INFO][2016-05-29 22:57:32,920][com.dandelion.dao.impl.TeamDaoImpl]队员已存在，添加失败
+[INFO][2016-05-29 22:57:32,949][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@56d15836: startup date [Sun May 29 22:57:29 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 22:57:32,951][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@205f4f: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,courtDao,teamDao,TeamMemberDao,userDao,courtService,TeamMemberService,teamService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-05-29 22:57:32,964][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-05-29 22:58:35,248][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-05-29 22:58:35,771][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-05-29 22:58:35,919][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@4eeba477: startup date [Sun May 29 22:58:35 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 22:58:36,166][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-05-29 22:58:36,312][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@58242ff4: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,courtDao,teamDao,TeamMemberDao,userDao,courtService,TeamMemberService,teamService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-05-29 22:58:36,590][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-05-29 22:58:36,796][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-05-29 22:58:37,505][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-05-29 22:58:37,513][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-05-29 22:58:37,515][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-05-29 22:58:37,518][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-05-29 22:58:37,961][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-05-29 22:58:38,322][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-05-29 22:58:38,337][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-05-29 22:58:38,678][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-05-29 22:58:38,679][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-05-29 22:58:38,683][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-05-29 22:58:38,713][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_courtinfo
+[INFO][2016-05-29 22:58:38,713][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, username, xbaidu, location, ybaidu, tel, courtname, detaillocation]
+[INFO][2016-05-29 22:58:38,714][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 22:58:38,714][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 22:58:38,725][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_teaminfo
+[INFO][2016-05-29 22:58:38,725][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, declaration, teamname, regdate, leader, introduction, mobile]
+[INFO][2016-05-29 22:58:38,726][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 22:58:38,726][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 22:58:38,740][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_teammember
+[INFO][2016-05-29 22:58:38,741][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, teamid, userid]
+[INFO][2016-05-29 22:58:38,741][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 22:58:38,741][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 22:58:38,754][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_user
+[INFO][2016-05-29 22:58:38,754][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, birthday, sex, username, regtime, startplay, remark, state, password, mobile]
+[INFO][2016-05-29 22:58:38,755][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 22:58:38,755][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[ERROR][2016-05-29 22:58:38,846][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table t_teaminfo add column introduction  varchar(255)
+[ERROR][2016-05-29 22:58:38,846][org.hibernate.tool.hbm2ddl.SchemaUpdate]Duplicate column name 'introduction'
+[INFO][2016-05-29 22:58:38,846][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-05-29 22:58:39,027][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-05-29 22:58:36",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:568571339, ConnectTime:"2016-05-29 22:58:37", UseCount:2, LastActiveTime:"2016-05-29 22:58:38"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[WARN][2016-05-29 22:58:39,329][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 65.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2016-05-29 22:58:39,332][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 79.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2016-05-29 22:58:39,439][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 58.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2016-05-29 22:58:39,440][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 73.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2016-05-29 22:58:39,538][com.dandelion.dao.impl.TeamDaoImpl]队员以在球队中，加入失败
+[INFO][2016-05-29 22:58:39,538][com.dandelion.dao.impl.TeamDaoImpl]队员已存在，添加失败
+[INFO][2016-05-29 22:58:39,548][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@4eeba477: startup date [Sun May 29 22:58:35 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 22:58:39,549][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@58242ff4: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,courtDao,teamDao,TeamMemberDao,userDao,courtService,TeamMemberService,teamService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-05-29 22:58:39,559][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-05-29 22:59:01,050][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-05-29 22:59:01,611][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-05-29 22:59:01,770][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@519fbfd6: startup date [Sun May 29 22:59:01 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 22:59:01,998][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-05-29 22:59:02,079][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@173e696b: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,courtDao,teamDao,TeamMemberDao,userDao,courtService,TeamMemberService,teamService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-05-29 22:59:02,326][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-05-29 22:59:02,522][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-05-29 22:59:03,245][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-05-29 22:59:03,252][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-05-29 22:59:03,256][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-05-29 22:59:03,260][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-05-29 22:59:03,713][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-05-29 22:59:03,952][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-05-29 22:59:03,959][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-05-29 22:59:04,240][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-05-29 22:59:04,240][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-05-29 22:59:04,267][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-05-29 22:59:04,306][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_courtinfo
+[INFO][2016-05-29 22:59:04,306][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, username, xbaidu, location, ybaidu, tel, courtname, detaillocation]
+[INFO][2016-05-29 22:59:04,306][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 22:59:04,307][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 22:59:04,319][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_teaminfo
+[INFO][2016-05-29 22:59:04,319][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, declaration, teamname, regdate, leader, introduction, mobile]
+[INFO][2016-05-29 22:59:04,320][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 22:59:04,320][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 22:59:04,334][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_teammember
+[INFO][2016-05-29 22:59:04,335][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, teamid, userid]
+[INFO][2016-05-29 22:59:04,335][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 22:59:04,336][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 22:59:04,350][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_user
+[INFO][2016-05-29 22:59:04,350][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, birthday, sex, username, regtime, startplay, remark, state, password, mobile]
+[INFO][2016-05-29 22:59:04,351][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 22:59:04,351][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[ERROR][2016-05-29 22:59:04,429][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table t_teaminfo add column introduction  varchar(255)
+[ERROR][2016-05-29 22:59:04,430][org.hibernate.tool.hbm2ddl.SchemaUpdate]Duplicate column name 'introduction'
+[INFO][2016-05-29 22:59:04,430][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-05-29 22:59:04,600][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-05-29 22:59:02",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1374909669, ConnectTime:"2016-05-29 22:59:03", UseCount:2, LastActiveTime:"2016-05-29 22:59:04"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[WARN][2016-05-29 22:59:04,943][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 65.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2016-05-29 22:59:04,945][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 79.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2016-05-29 22:59:05,026][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@519fbfd6: startup date [Sun May 29 22:59:01 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 22:59:05,027][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@173e696b: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,courtDao,teamDao,TeamMemberDao,userDao,courtService,TeamMemberService,teamService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-05-29 22:59:05,042][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-05-29 23:09:25,203][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-05-29 23:09:25,607][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-05-29 23:09:25,723][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@519fbfd6: startup date [Sun May 29 23:09:25 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 23:09:25,885][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-05-29 23:09:25,939][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@173e696b: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,courtDao,teamDao,TeamMemberDao,userDao,courtService,TeamMemberService,teamService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-05-29 23:09:26,108][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-05-29 23:09:26,240][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-05-29 23:09:26,772][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-05-29 23:09:26,780][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-05-29 23:09:26,780][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-05-29 23:09:26,780][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-05-29 23:09:27,126][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-05-29 23:09:27,318][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-05-29 23:09:27,318][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-05-29 23:09:27,558][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-05-29 23:09:27,558][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-05-29 23:09:27,558][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-05-29 23:09:27,589][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_courtinfo
+[INFO][2016-05-29 23:09:27,589][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, username, xbaidu, location, ybaidu, tel, courtname, detaillocation]
+[INFO][2016-05-29 23:09:27,589][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 23:09:27,589][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 23:09:27,609][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_teaminfo
+[INFO][2016-05-29 23:09:27,609][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, declaration, teamname, regdate, leader, introduction, mobile]
+[INFO][2016-05-29 23:09:27,609][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 23:09:27,610][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 23:09:27,611][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_teammember
+[INFO][2016-05-29 23:09:27,611][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, teamid, userid]
+[INFO][2016-05-29 23:09:27,611][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 23:09:27,611][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 23:09:27,627][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_user
+[INFO][2016-05-29 23:09:27,627][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, birthday, sex, username, regtime, startplay, remark, state, password, mobile]
+[INFO][2016-05-29 23:09:27,627][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 23:09:27,627][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[ERROR][2016-05-29 23:09:27,689][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table t_teaminfo add column introduction  varchar(255)
+[ERROR][2016-05-29 23:09:27,689][org.hibernate.tool.hbm2ddl.SchemaUpdate]Duplicate column name 'introduction'
+[INFO][2016-05-29 23:09:27,689][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-05-29 23:09:27,827][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-05-29 23:09:26",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:716525859, ConnectTime:"2016-05-29 23:09:27", UseCount:2, LastActiveTime:"2016-05-29 23:09:27"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[WARN][2016-05-29 23:09:28,058][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 65.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2016-05-29 23:09:28,058][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 80.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2016-05-29 23:09:28,127][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@519fbfd6: startup date [Sun May 29 23:09:25 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 23:09:28,127][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@173e696b: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,courtDao,teamDao,TeamMemberDao,userDao,courtService,TeamMemberService,teamService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-05-29 23:09:28,127][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-05-29 23:10:08,154][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2016-05-29 23:10:08,581][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2016-05-29 23:10:08,697][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@519fbfd6: startup date [Sun May 29 23:10:08 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 23:10:08,851][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-05-29 23:10:08,913][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@173e696b: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,courtDao,teamDao,TeamMemberDao,userDao,courtService,TeamMemberService,teamService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-05-29 23:10:09,090][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-05-29 23:10:09,213][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-05-29 23:10:09,747][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-05-29 23:10:09,752][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-05-29 23:10:09,755][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-05-29 23:10:09,756][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-05-29 23:10:10,095][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-05-29 23:10:10,280][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-05-29 23:10:10,280][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-05-29 23:10:10,496][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-05-29 23:10:10,496][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-05-29 23:10:10,496][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-05-29 23:10:10,527][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_courtinfo
+[INFO][2016-05-29 23:10:10,527][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, username, xbaidu, location, ybaidu, tel, courtname, detaillocation]
+[INFO][2016-05-29 23:10:10,527][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 23:10:10,527][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 23:10:10,543][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_teaminfo
+[INFO][2016-05-29 23:10:10,543][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, declaration, teamname, regdate, leader, introduction, mobile]
+[INFO][2016-05-29 23:10:10,543][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 23:10:10,543][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 23:10:10,543][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_teammember
+[INFO][2016-05-29 23:10:10,543][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, teamid, userid]
+[INFO][2016-05-29 23:10:10,543][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 23:10:10,543][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-05-29 23:10:10,564][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: Dandelion.t_user
+[INFO][2016-05-29 23:10:10,564][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, birthday, sex, username, regtime, startplay, remark, state, password, mobile]
+[INFO][2016-05-29 23:10:10,564][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-05-29 23:10:10,564][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[ERROR][2016-05-29 23:10:10,627][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000388: Unsuccessful: alter table t_teaminfo add column introduction  varchar(255)
+[ERROR][2016-05-29 23:10:10,627][org.hibernate.tool.hbm2ddl.SchemaUpdate]Duplicate column name 'introduction'
+[INFO][2016-05-29 23:10:10,627][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-05-29 23:10:10,727][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-05-29 23:10:08",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:74571078, ConnectTime:"2016-05-29 23:10:10", UseCount:2, LastActiveTime:"2016-05-29 23:10:10"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[WARN][2016-05-29 23:10:10,966][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 58.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2016-05-29 23:10:10,967][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 73.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2016-05-29 23:10:11,182][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@519fbfd6: startup date [Sun May 29 23:10:08 CST 2016]; root of context hierarchy
+[INFO][2016-05-29 23:10:11,182][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@173e696b: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,courtDao,teamDao,TeamMemberDao,userDao,courtService,TeamMemberService,teamService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-05-29 23:10:11,197][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
